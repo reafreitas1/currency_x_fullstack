@@ -1,0 +1,31 @@
+<div class="container">
+
+  <h1>CurrencyX - Taxas de Câmbio</h1>
+  <p style="text-align: center; color: #666;">Base: 1 EUR</p>
+
+  <div *ngIf="dados; else carregando">
+    <p>Estado da API: <span style="color: green; font-weight: bold;">{{ dados.result }}</span></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Moeda</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let taxa of dados.conversion_rates | keyvalue">
+          <td><strong>{{ taxa.key }}</strong></td>
+          <td>{{ taxa.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ng-template #carregando>
+    <div style="text-align: center; padding: 20px;">
+      <p>A carregar dados do Backend Java...</p>
+    </div>
+  </ng-template>
+
+</div>
