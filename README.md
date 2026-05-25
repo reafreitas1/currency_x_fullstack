@@ -1,6 +1,14 @@
 # 💱 CurrencyX - Full Stack Dashboard
 
-This is a **Full Stack** project developed for querying and visualizing real-time exchange rates. The system consumes an external financial API, processes the data in a robust backend, and presents it through a reactive and modern interface.
+This project was a purely technical Proof of Concept (PoC) aimed at validating modern reactivity and architectural patterns currently trending in the industry.
+
+🔹 **Backend (Java 21):**
+Clean implementation focusing on the efficiency of the language's latest features (such as Records).
+Robust and seamless integration with external financial data providers.
+
+🔹 **Frontend (Angular 18):**
+Deep dive into the new Reactive Control Flow and optimized performance.
+A clean, functional UI designed for real-time data delivery and better UX.
 
 ---
 <table border="0">
