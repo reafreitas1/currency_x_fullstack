@@ -1,16 +1,14 @@
 # 💱 CurrencyX - Full Stack Dashboard
 
-Este é um projeto **Full Stack** desenvolvido para consulta e visualização de taxas de câmbio em tempo real. O sistema consome uma API financeira externa, processa os dados num backend robusto e apresenta-os numa interface reativa e moderna.
+This is a **Full Stack** project developed for querying and visualizing real-time exchange rates. The system consumes an external financial API, processes the data in a robust backend, and presents it through a reactive and modern interface.
 
 ---
 <table border="0">
   <tr>
-    <!-- Coluna do Frontend -->
     <td valign="top" align="center" width="50%">
       <p align="center"><b>Frontend Dashboard</b></p>
       <img src="./img/localhost4200_dashboard.jpg" width="100%">
     </td>
-    <!-- Coluna do Backend -->
     <td valign="top" align="center" width="50%">
       <p align="center"><b>Backend JSON API</b></p>
       <img src="./img/localhost8080_api_cambio_json.jpg" width="100%">
@@ -19,57 +17,57 @@ Este é um projeto **Full Stack** desenvolvido para consulta e visualização de
 </table>
 
 
-## 🛠️ Tecnologias e Conceitos Utilizados
+## 🛠️ Technologies and Concepts Used
 
 ### **Backend (API)**
-*   **Java 21:** Utilização de **Records** para uma estrutura de dados imutável e concisa.
-*   **Spring Boot 3.x:** Framework base para a criação da API REST.
-*   **Maven:** Gestão de dependências e build do projeto.
-*   **RestTemplate:** Integração e consumo de API de terceiros (ExchangeRate-API).
-*   **Externalized Configuration:** Gestão de chaves de API através de variáveis de ambiente e `@Value`.
-*   **CORS Configuration:** Configuração de segurança para permitir a comunicação com o Frontend.
+* **Java 21:** Utilization of Records for an immutable and concise data structure.
+* **Spring Boot 3.x:** Base framework for creating the REST API.
+* **Maven:** Dependency management and project build.
+* **RestTemplate:** Integration and consumption of third-party API (ExchangeRate-API).
+* **Externalized Configuration:** API key management via environment variables and @Value.
+* **CORS Configuration:** Security configuration to allow communication with the Frontend.
 
 ### **Frontend (Web)**
-*   **Angular 18:** Framework moderno utilizando **Standalone Components**.
-*   **TypeScript:** Programação tipada para maior segurança e escalabilidade.
-*   **HttpClient:** Consumo assíncrono de recursos do Backend.
-*   **RxJS:** Utilização de Observables para subscrição de fluxos de dados.
-*   **CSS Flexbox/Grid:** Interface limpa, responsiva e focada na experiência do utilizador (UX).
+* **Angular 18:** Modern framework using Standalone Components.
+* **TypeScript:** Typed programming for increased security and scalability.
+* **HttpClient:** Asynchronous consumption of Backend resources.
+* **RxJS:** Utilization of Observables for data stream subscriptions.
+* **CSS Flexbox/Grid:** Clean, responsive interface focused on User Experience (UX).
 
 ---
 
-## ⚙️ Como executar o projeto localmente
+## ⚙️ How to run the project locally
 
-### Pré-requisitos
-*   JDK 21 instalado
-*   Maven 3.9+ instalado
-*   Node.js (LTS) e Angular CLI instalados
+### Prerequisites
+*   JDK 21 installed
+*   Maven 3.9+ installed
+*   Node.js (LTS) and Angular CLI installed
 
-### 1. Clonar o repositório
+### 1. Clone the repository
 ```bash
 git clone https://github.com/reafreitas1/currency_x_fullstack.git
 cd currency_x_fullstack
 ```
 
-### 2. Configurar e rodar o Backend (Java)
-1. Obtenha uma chave gratuita em exchangerate-api.com.
-2. No ficheiro currency_x_api/src/main/resources/application.properties, adicione a sua chave:
-api.exchangerate.key=SUA_CHAVE_AQUI
-3. No IntelliJ ou terminal:
+### 2. Setup and run the Backend (Java)
+1. Obtain a free key at exchangerate-api.com.
+2. In the file currency_x_api/src/main/resources/application.properties, add your key:
+api.exchangerate.key=YOUR_KEY_HERE
+3. In IntelliJ or your terminal:
 ```bash
 cd currency_x_api
 mvn spring-boot:run
 ```
-### 3. Configurar e rodar o Frontend (Angular)
-1. Abra um novo terminal na pasta do projeto:
+### 3. Setup and run the Frontend (Angular)
+1. Open a new terminal in the project folder:
 ```bash
 cd currency-x-web
 npm install
 ng serve
 ```
-2. Aceda a http://localhost:4200 no seu browser.
+2. Access a http://localhost:4200 in your browser.
 
-### 👩👩‍💻 Sobre Mim
+### 👩👩‍💻 About Me
 * **LinkedIn:** linkedin.com/in/reafreitas1/
 * **GitHub:** github.com/reafreitas1
-* **Localização:** Porto, Portugal
+* **Location:** Porto, Portugal
